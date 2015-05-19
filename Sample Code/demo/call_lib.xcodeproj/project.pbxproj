@@ -322,7 +322,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = /Users/liyalin/Desktop/workfile/MyWork/IOS/SDK_Product/iR301U_SDK_ST_/iR301U_SDK_ST_2/libs/SDK/lib;
+				LIBRARY_SEARCH_PATHS = "$SOURCE_ROOT/../../libs/**";
 				PRODUCT_NAME = iR301U;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -345,7 +345,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = /Users/liyalin/Desktop/workfile/MyWork/IOS/SDK_Product/iR301U_SDK_ST_/iR301U_SDK_ST_2/libs/SDK/lib;
+				LIBRARY_SEARCH_PATHS = "$SOURCE_ROOT/../../libs/**";
 				PRODUCT_NAME = iR301U;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
