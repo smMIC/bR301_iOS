@@ -1,3 +1,9 @@
+# Xcode project files
+libs/iR301U.xcworkspace/xcuserdata/
+libs/source/iRockey301_ccid.xcodeproj/xcuserdata/
+Sample Code/demo/call_lib.xcodeproj/xcuserdata/
+Sample Code/demo/call_lib.xcodeproj/project.xcworkspace/
+
 # Object files
 *.o
 *.ko
@@ -10,7 +16,7 @@
 
 # Libraries
 *.lib
-*.a
+#*.a
 *.la
 *.lo
 
