@@ -28,7 +28,7 @@
 #ifndef __ft301u_h__
 #define __ft301u_h__
 
-
+#include "winscard.h"
 #include "wintypes.h"
 
 #ifdef __cplusplus
