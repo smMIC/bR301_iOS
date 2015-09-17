@@ -1,3 +1,4 @@
+xcuserdata
 # Object files
 *.o
 *.ko
@@ -11,6 +12,7 @@
 # Libraries
 *.lib
 #*.a
+libs/SDK/lib/libiRockey301_ccid.a
 *.la
 *.lo
 
