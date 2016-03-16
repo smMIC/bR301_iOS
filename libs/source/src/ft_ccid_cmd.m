@@ -34,7 +34,9 @@
 #include "proto-t1.h"
 #include  <pthread.h>
 
-#import "EADSessionController.h"
+#import "bR301SessionController.h"
+
+#define FT_IR301_DEBUG
 
 static _ccid_descriptor s_ccidDevice[CCID_DRIVER_MAX_READERS]={0};
 
@@ -123,7 +125,7 @@ status_t ReadSerial(unsigned int reader_index,
     
         int iRet=0;
     
-        EADSessionController *sessionController = [EADSessionController sharedController];
+        bR301SessionController *sessionController = [bR301SessionController sharedController];
         gIsReadData = 1;
         iRet = [sessionController readData: buffer withbytesToRead:length];
         gIsReadData = 0;
@@ -171,7 +173,7 @@ status_t WriteSerial(unsigned int reader_index, unsigned int length,
     @try {
                int iRet=0;
     
-                EADSessionController *sessionController = [EADSessionController sharedController];
+                bR301SessionController *sessionController = [bR301SessionController sharedController];
        
                 iRet = [sessionController writeData: buffer withLength:length];
         
@@ -217,7 +219,7 @@ RESPONSECODE CmdGetDevVer(unsigned int reader_index,char *firmwareRevision,char 
         return IFD_ERROR_TAG;
     }
     
-    EADSessionController *sessionController = [EADSessionController sharedController];
+    bR301SessionController *sessionController = [bR301SessionController sharedController];
     NSString *tmp=[[sessionController accessory] firmwareRevision];
     if (iR301_or_bR301 == 0)
     {

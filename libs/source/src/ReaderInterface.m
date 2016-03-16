@@ -24,10 +24,11 @@
 
 #import <Foundation/Foundation.h>
 #import "ReaderInterface.h"
-#import "EADSessionController.h"
+#import "bR301SessionController.h"
 #import "ft_ccid.h"
 
 @implementation ReaderInterface
+
 
 - (id)init
 {
@@ -38,12 +39,12 @@
     return self;
 }
 
-- (BOOL)isReaderAttached;
+-(BOOL) isReaderAttached
 {
     return gIsOpen;
 }
 
-- (BOOL)isCardAttached;
+- (BOOL)isCardAttached
 {
     
     LONG rv;
@@ -79,7 +80,7 @@
 
 - (void)  setDelegate:(id<ReaderInterfaceDelegate>)delegate
 {
-    EADSessionController *sessionController = [EADSessionController sharedController];
+    bR301SessionController *sessionController = [bR301SessionController sharedController];
     
     [sessionController setDelegate:delegate];
     
