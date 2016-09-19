@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "bR301"
-  s.version      = "0.1"
+  s.version      = "1.3.5"
   s.summary      = "Feitian mobile smartcard reader iOS SDK"
 
   s.description  = <<-DESC
