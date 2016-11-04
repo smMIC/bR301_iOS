@@ -1,21 +1,21 @@
 Pod::Spec.new do |s|
 
   s.name         = "bR301"
-  s.version      = "1.3.5"
+  s.version      = "1.31.6"
   s.summary      = "Feitian mobile smartcard reader iOS SDK"
 
   s.description  = <<-DESC
                    This is a fork of Feitians [sdk](https://github.com/FeitianSmartcardReader/bR301_iOS) which can be included in cocoapods projects.
                    DESC
 
-  s.homepage     = "https://github.com/chgandm/bR301_iOS"
+  s.homepage     = "https://github.com/smMIC/bR301_iOS"
   s.license      = "GPL 2.1"
   s.author    = "Marco Tresch"
 
   s.platform     = :ios
 
 
-  s.source       = { :git => "https://github.com/chgandm/bR301_iOS", :branch => "master" }
+  s.source       = { :git => "https://github.com/smMIC/bR301_iOS", :branch => "master" }
 
   s.source_files  = "libs/SDK/include/*h", "libs/source/src/**/*"
   s.exclude_files = "Classes/Exclude"
